@@ -1,0 +1,187 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    /* Fundo preto para toda a navbar */
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Links principais da navbar */
+.navbar .nav-link {
+    color: #fff !important;
+    /* Texto branco */
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: color 0.3s, border 0.3s;
+    margin: 0 5px;
+}
+
+.navbar .nav-link:hover {
+    background-color: #000;
+    /* Fundo preto */
+    color: #e74c3c !important;
+    /* Texto vermelho ao passar o mouse */
+    border: 1px solid #e74c3c;
+    /* Borda vermelha */
+    border-radius: 5px;
+    /* Arredonda os cantos */
+}
+
+/* Link ativo */
+.navbar .nav-link.active {
+    color: #e74c3c !important;
+    /* Cor vermelha para o link ativo */
+}
+
+/* Dropdown menu */
+.navbar .dropdown-menu {
+    background-color: #000;
+    /* Fundo preto */
+    border: none;
+    /* Remove a borda padrão */
+}
+
+.navbar .dropdown-item {
+    color: #fff;
+    /* Texto branco */
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s, border 0.3s;
+}
+
+/* Hover nos itens do dropdown */
+.navbar .dropdown-item:hover {
+    background-color: #000;
+    /* Mantém o fundo preto */
+    color: #e74c3c;
+    /* Texto vermelho ao passar o mouse */
+    border: 1px solid #e74c3c;
+    /* Borda vermelha */
+    border-radius: 5px;
+    /* Arredonda os cantos */
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 100px 20px 50px;
+    /* Ajuste do padding para evitar sobreposição com a navbar */
+    text-align: center;
+    position: relative;
+}
+
+header img {
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section#about {
+    background-color: #111;
+}
+
+h2 {
+    color: #e74c3c;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+h4 {
+    color: #e74c3c;
+}
+
+strong {
+    color: #e74c3c;
+}
+
+a.btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+a.btn:hover {
+    background-color: #c0392b;
+}
+
+a{
+    color: #e74c3c;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+footer a {
+    color: #e74c3c;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #c0392b;
+}
+
+.project-card {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.project-card h3 {
+    color: #e74c3c;
+}
+
+.project-card ul {
+    text-align: left;
+    margin: 20px auto;
+    display: inline-block;
+}
