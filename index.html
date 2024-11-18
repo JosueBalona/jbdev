@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-    
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,19 +36,11 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- Script corrigido para carregar o navbar.html -->
     <script>
+        // Código para carregar o conteúdo do arquivo navbar.html
         fetch("navbar.html")
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`Erro HTTP! status: ${response.status}`);
-                }
-                return response.text();
-            })
-            .then(data => {
-                document.getElementById("navbar-container").innerHTML = data;
-            })
-            .catch(error => {
-                console.error("Erro ao carregar a navbar:", error);
-            });
+            .then(response => response.text())
+            .then(data => document.getElementById("navbar-container").innerHTML = data)
+            .catch(error => console.error("Erro ao carregar a navbar:", error));
     </script>
 </body>
 
