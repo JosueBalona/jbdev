@@ -8,16 +8,24 @@ body {
 }
 
 /* Navbar */
-.navbar {
+.custom-navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #000;
-    /* Fundo preto para toda a navbar */
+    background-color: #000; /* Fundo preto para toda a navbar */
     padding: 10px 0;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff; /* Cor branca para os links */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ddd; /* Cor clara ao passar o mouse sobre os links */
+}
+
 
 /* Links principais da navbar */
 .navbar .nav-link {
